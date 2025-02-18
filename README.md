@@ -49,4 +49,6 @@
 need to install certifi and extend python's cert file .pem with API certificates
 https://stackoverflow.com/questions/51925384/unable-to-get-local-issuer-certificate-when-using-requests
 
-### If ...
+### If ecountering SSLError using Spacy:
+1. https://stackoverflow.com/questions/55742788/ssl-certificate-verify-failed-error-while-downloading-python-m-spacy-download - download spacy model manually then install with pip
+2. 
