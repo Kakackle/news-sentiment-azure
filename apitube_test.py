@@ -23,7 +23,7 @@ payload = {
     'published_at.end': 'NOW'
 }
 
-response = requests.get(url=endpoint, params=payload, headers=headers, verify=False)
+response = requests.get(url=endpoint, params=payload, headers=headers) #, verify=False)
 response.raise_for_status()
 response_json = response.json()
 
