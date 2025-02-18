@@ -1,10 +1,13 @@
 # News API ETL project with sentiment analysis, streamlit graphs etc
-## Project diagram
+## Desired Project diagram
 ![project diagram](project_diagram\Project_diagram.png)
-## Project outline:
+## Desired Project outline:
 * Streamlit on Azure web apps website showing graphs of number of articles and average sentiment for a few selected companies per day
 * Airflow with docker on azure container instances running daily to get data from API, run simple NLP (sentiment analysis from NLTK is enough) and save results
 * Either SQL db or blob storage (cheaper) for results of API and combined NLP results (counts of articles, average sentiment)
+
+## Initial project differences
+1. Skip airflow and just use Azure functions to do all the tasks - Airflow scheduling requires extra development configurations
 
 ## Aspects to determine:
 * SQL or blob? SQL - easier for querying, makes sense to append new rows by date, but more expensive on Azure. Blob - significantly cheaper, have to store results in separate files or append to a file
