@@ -8,7 +8,7 @@ load_dotenv()
 
 APITUBE_KEY = os.getenv('APITUBE_KEY')
 
-endpoint = 'https://api.apitube.io/v1/news/everything'
+endpoint = 'https://api.apitube.io/v1/news/top-headlines'
 
 headers = {'Authorization': f'Bearer {APITUBE_KEY}'}
 
