@@ -20,12 +20,14 @@ sort_order = 'source.rank.opr'
 payload = {
     'title': f'{company}',
     'language': 'en',
-    'published_at.start': f'NOW-{time_range}',
-    'published_at.end': 'NOW',
+    # 'published_at.start': f'NOW-{time_range}',
+    # 'published_at.end': 'NOW',
+    'published_at.start': 'NOW-2D',
+    'published_at.end': 'NOW-1D',
     # 'source.rank.opr.max': '0.9'
     'is_duplicate': 'false',
     'sort_by': f'{sort_order}',
-    'sort_order': 'asc'
+    'sort_order': 'desc'
 }
 
 response = requests.get(url=endpoint, params=payload, headers=headers) #, verify=False)
@@ -35,7 +37,8 @@ response_json = response.json()
 current_timestamp = datetime.datetime.now()
 current_timestamp_formatted = current_timestamp.strftime("%Y%m%d_%H%M%S")
 
-localfile_path = os.path.join('.', 'test_requests', 'apitube', f'{company}_{current_timestamp_formatted}.json')
+localfile_path = os.path.join('.', 'test_requests', 'apitube', 'topheadlines',
+                               f'{company}_{current_timestamp_formatted}.json')
 
 with open(localfile_path, mode='wb') as localfile:
     localfile.write(response.content)
