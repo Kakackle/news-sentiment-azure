@@ -15,5 +15,9 @@
 4. https://techcommunity.microsoft.com/blog/appsonazureblog/deploy-streamlit-on-azure-web-app/4276108
 
 
-
+### Apitube links
+1. https://apitube.io/cookbook/get-recent-articles-from-top-tech-blogs
+2. https://docs.apitube.io/platform/news-api/parameters
+3. https://apitube.io/cookbook/get-news-articles-in-multiple-languages - DOESN'T WORK. If you want results from multiple countries, categories etc you have to get each one individually, if they are exclusive, like an article being in language en and fr
+for this you might want to use /category/...&query endpoints instead of /everything&query
 

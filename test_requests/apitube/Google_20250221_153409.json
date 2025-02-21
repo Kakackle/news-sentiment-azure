@@ -1,0 +1,21 @@
+{
+    "status": "ok",
+    "limit": 50,
+    "path": "https://api.apitube.io/v1/news/everything?title=Google\u0026language=en+OR+fr+OR+es\u0026published_at.start=NOW-2D\u0026published_at.end=NOW-1D\u0026is_duplicate=false\u0026sort_by=published_at\u0026sort_order=desc\u0026source.rank=0.5",
+    "page": 1,
+    "has_next_pages": false,
+    "next_page": "",
+    "next_page_cursor": "*",
+    "has_previous_page": false,
+    "previous_page": "",
+    "export": {
+        "json": "https://api.apitube.io/v1/news/everything?export=json\u0026is_duplicate=false\u0026language=en+OR+fr+OR+es\u0026published_at.end=NOW-1D\u0026published_at.start=NOW-2D\u0026sort_by=published_at\u0026sort_order=desc\u0026source.rank=0.5\u0026title=Google",
+        "xlsx": "https://api.apitube.io/v1/news/everything?export=xlsx\u0026is_duplicate=false\u0026language=en+OR+fr+OR+es\u0026published_at.end=NOW-1D\u0026published_at.start=NOW-2D\u0026sort_by=published_at\u0026sort_order=desc\u0026source.rank=0.5\u0026title=Google",
+        "csv": "https://api.apitube.io/v1/news/everything?export=csv\u0026is_duplicate=false\u0026language=en+OR+fr+OR+es\u0026published_at.end=NOW-1D\u0026published_at.start=NOW-2D\u0026sort_by=published_at\u0026sort_order=desc\u0026source.rank=0.5\u0026title=Google",
+        "tsv": "https://api.apitube.io/v1/news/everything?export=tsv\u0026is_duplicate=false\u0026language=en+OR+fr+OR+es\u0026published_at.end=NOW-1D\u0026published_at.start=NOW-2D\u0026sort_by=published_at\u0026sort_order=desc\u0026source.rank=0.5\u0026title=Google",
+        "xml": "https://api.apitube.io/v1/news/everything?export=xml\u0026is_duplicate=false\u0026language=en+OR+fr+OR+es\u0026published_at.end=NOW-1D\u0026published_at.start=NOW-2D\u0026sort_by=published_at\u0026sort_order=desc\u0026source.rank=0.5\u0026title=Google"
+    },
+    "request_id": "32ef22d3-c152-4ff6-a3d2-db23dc20541b",
+    "results": [],
+    "user_input": null
+}
